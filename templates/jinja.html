@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jinja</title>
+</head>
+<body>
+  <a href="index.html">Hjem</a>
+    <a href="jinja.html">Jinja</a>
+    
+    <h1>Hei, {{ navn }}</h1>
+
+    <h2>Elever:</h2>
+
+    <ul>
+        {% for elev in elever %}
+            <li>{{ elev }}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
